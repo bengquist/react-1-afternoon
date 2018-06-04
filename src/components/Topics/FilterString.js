@@ -16,7 +16,7 @@ export default class FilterString extends Component {
     let currInput = this.state.unfilteredArr;
 
     for (let i = 0; i < currInput.length; i++) {
-      if (currInput[i] === input) {
+      if (currInput[i].includes(input)) {
         newArr.push(currInput[i]);
       }
     }
